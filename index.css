@@ -1,0 +1,57 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: none;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.ipt{
+    border: 2px solid #ededed;
+    &:focus{
+        border-color: #0000ff;
+    }
+
+}
+.btn{
+    background-color: #0000fb;
+    color: #ffffff;
+    transition-duration: 300ms;
+    &:hover{
+        /* transform: translate(50%,50%); */
+        /* transform-origin:left top;
+        transform: scale(2,2); */
+
+        /* transform: rotate(360deg) scale(2,2); */
+        animation: pular linear infinite 2s;
+        background-color: #0000ab;
+    
+    }
+  
+    
+}
+
+@keyframes pular{
+        0%{
+            transform: translateY(0);
+        }
+        25%{
+            transform: translateY(-100px);
+        }
+        50%{
+            transform: translateY(0);
+        }
+        75%{
+            transform: translateY(-50px);
+        }
+        100%{
+            transform: translateY(0);
+        }
+    }
